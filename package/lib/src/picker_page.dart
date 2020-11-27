@@ -177,7 +177,7 @@ class _FilesystemPickerState extends State<FilesystemPicker> {
         title: Text(widget.title ?? directoryName),
         leading: IconButton(
           icon: Icon(Icons.close),
-          onPressed: () => Navigator.of(context).pop(),
+          onPressed: onPressed: () => widget.onSelect(null),
         ),
         bottom: PreferredSize(
           child: Theme(
